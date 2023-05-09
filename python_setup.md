@@ -29,7 +29,43 @@ Will show the available versions. To install:
 pyenv install <xx.xx.xx>
 ```
 
-### Step 4 (Optional)
+### Step 4
+
+Add the following:
+```
+eval "$(pyenv init --path)"
+```
+To the `.zprofile` file. If it does not exist, create it with `touch .zprofile`.
+
+### Step 5
+
+In terminal:
+```
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+```
+Will add the required lines to the `.zshrc` file (and create it if it is not already there).
+
+### Step 6
+
+Install **pyenv-virtualenv**.
+In terminal:
+```
+brew update
+brew install pyenv-virtualenv
+```
+More info: <https://github.com/pyenv/pyenv-virtualenv>
+
+### Step 7
+
+Add the following:
+```
+eval "$(pyenv virtualenv-init -)"
+```
+To the `.zshrc` file.
+
+### Step 8 (Optional)
 
 List all versions of python.
 In terminal:
@@ -41,42 +77,6 @@ Set global version of python to whichever version:
 ```
 pyenv global <xx.xx.xx>
 ```
-
-### Step 5
-
-Add the following:
-```
-eval "$(pyenv init --path)"
-```
-To the `.zprofile` file.
-
-### Step 6
-
-In terminal:
-```
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(pyenv init -)"' >> ~/.zshrc
-```
-Will add the required lines to the `.zshrc` file (and create it if it is not already there).
-
-### Step 7
-
-Install **pyenv-virtualenv**.
-In terminal:
-```
-brew update
-brew install pyenv-virtualenv
-```
-More info: <https://github.com/pyenv/pyenv-virtualenv>
-
-### Step 8
-
-Add the following:
-```
-eval "$(pyenv virtualenv-init -)"
-```
-To the `.zshrc` file.
 
 ## Project Setup
 
