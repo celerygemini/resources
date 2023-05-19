@@ -35,7 +35,7 @@ Ensure the dev libraries are installed with `pip`:
 - **setuptools**
 - **twine**
 
-It is convenient to use a `devreqs.txt` file and `pip install` in the same way as the general requirements: `pip install -r devreqs.txt`.
+It is convenient to use a `requirements_dev.txt` file and `pip install` in the same way as the general requirements: `pip install -r requirements_dev.txt`.
 
 ### Step 3
 
