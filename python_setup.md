@@ -4,7 +4,7 @@
 
 ### Step 1
 
-Install Homebrew <https://brew.sh>
+Install [Homebrew](https://brew.sh)
 
 ### Step 2
 

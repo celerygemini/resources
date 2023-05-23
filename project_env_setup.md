@@ -26,8 +26,8 @@ In terminal:
 pyenv install <xx.xx.xx>
 ```
 
-To list available versions: `pyenv install -l`
-To list previously installed versions: `pyenv versions`
+- To list available versions: `pyenv install -l`
+- To list previously installed versions: `pyenv versions`
 
 ### Step 4
 
