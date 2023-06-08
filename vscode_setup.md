@@ -23,4 +23,4 @@ cd project folder
 code .
 ```
 
-If python and the virtual environment has been set to automatic activation on opening the folder (see **Step 5** in instructions [here](https://github.com/celerygemini/resources/blob/main/project_env_setup.md)), the session in **VSCode** will open at the folder and activate the appropriate environment automatically.
+If python and the virtual environment has been set to automatic activation on opening the folder (see **Step 5** in instructions [here](https://github.com/celerygemini/resources/blob/main/project_env_setup.md#step-5)), the session in **VSCode** will open at the folder and activate the appropriate environment automatically.
