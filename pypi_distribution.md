@@ -107,6 +107,7 @@ Note that:
 - `name` should be the same as the chosen `package_name`.
 - `python_requires` can use inequality expressions like `">=3.9"`.
 - The above configuration will use the linked repo README for the `long_description`.
+- The `"Programming Language"` section of the `classifiers` list can be specific versions.
 
 ### Step 6
 
@@ -127,6 +128,34 @@ python setup.py sdist
 ```
 
 ### Step 8
+
+Upload to PyPI.
+In terminal (from the project directory), run: 
+```
+twine upload dist/*
+```
+
+Note that PyPY login crdentials will be required here.
+
+## Updating the Package
+
+### Step 1
+
+Delete the `dist` folder in the project directory.
+
+### Step 2
+
+Update the version number in `setup.py`.
+
+### Step 3
+
+Create the required distribution files.
+In terminal (from the project directory), run: 
+```
+python setup.py sdist
+```
+
+### Step 4
 
 Upload to PyPI.
 In terminal (from the project directory), run: 
