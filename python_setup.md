@@ -78,9 +78,21 @@ Set global version of python to whichever version:
 pyenv global <xx.xx.xx>
 ```
 
+### Step 9 (Optional)
+
+Add a `global_requirements.txt` file for global libraries (e.g. `setuptools`, `black`, `twine`, etc.) somewhere **outside** a project directory.
+
+Install the libraries in the global environment:
+```
+cd <folder containing global_requirements.txt>
+pip install --upgrade pip
+pip install -r global_requirements.txt
+```
+
+
 ## Project Setup
 
-### Step 9
+### Step 1
 
 Create virtual environment.
 In terminal:
@@ -88,7 +100,7 @@ In terminal:
 pyenv virtualenv <xx.xx.xx> <virtual_environment_name>
 ```
 
-### Step 10
+### Step 2
 
 Set local version in project directory.
 In terminal:
@@ -98,7 +110,7 @@ pyenv local <virtual_environment_name>
 ```
 Navigating to the project directory in future should automatically activate the virtual environment. Check with `python --version`.
 
-### Step 11
+### Step 3
 
 Update **pip** in virtual environment.
 In terminal:
@@ -107,7 +119,7 @@ cd <project_directory>
 pip install --upgrade pip
 ```
 
-### Step 12
+### Step 4
 
 Install libraries using requirements.txt as normal:
 ```
