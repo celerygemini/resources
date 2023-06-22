@@ -65,4 +65,11 @@ Install libraries using requirements.txt as normal:
 pip install -r requirements.txt
 ```
 
+## To delete a virtual envrionment
+
+In terminal:
+```
+pyenv virtualenv-delete <virtual_environment_name>
+```
+
 
